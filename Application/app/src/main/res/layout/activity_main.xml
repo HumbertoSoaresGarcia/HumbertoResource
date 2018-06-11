@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_marginTop="94dp"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="141dp"
+        android:text="@string/text_view1" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn2"
+        android:layout_alignStart="@+id/txt1"
+        android:text="@string/text_view2" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_marginTop="166dp"
+        android:ems="10"
+        android:hint="Texto 1"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Texto 2"
+        android:inputType="textPersonName" />
+
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="118dp"
+        android:text="Button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="144dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</RelativeLayout>
